@@ -1,0 +1,31 @@
+.about{
+    background: black !important;
+    color: white;
+    height: 100vh;
+}
+
+.aboutTextPart{
+    display: flex;
+    align-items: center;
+}
+
+.downloadbtn{
+    color: white;
+    background-color: rgb(221,23,111);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    transition: .1s ease-in-out;
+    margin: 10px 0;
+}
+.downloadbtn:hover{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(211,23,111);
+}
+
+@media only screen and (max-width:1000px) {
+    .about{
+      height: 100vh;
+    }
+  }

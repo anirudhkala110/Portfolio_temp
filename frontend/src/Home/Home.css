@@ -1,0 +1,33 @@
+.home{
+    background-image: url('../Portfolio/Images/background.gif');
+    /* background: black !important; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 72px;
+}
+.homeTextPart{
+    display: flex;
+    align-items: center;
+}
+
+.homeTextPart h3{
+    color: rgb(225,10,178);
+}
+
+.homeTextPart{
+    /* padding-top: 72px; */
+}
+.image{
+    width: 365px;
+}
+.icons{
+    font-size: 18px ;
+}
+
+@media only screen and (max-width:1000px) {
+    .home{
+      height: 100vh;
+    }
+  }
