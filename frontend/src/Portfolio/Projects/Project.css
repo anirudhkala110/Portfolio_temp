@@ -1,57 +1,44 @@
-.services{
+.services {
     background-color: black;
-    color:white;
+    color: white;
     height: 100vh;
 }
-.services img{
-    width: 100px;
-}
-.service{
-    height: 450px;
+
+.services img {
+    width: 50px;
 }
 
-hr{
+.service {
+    height: 305px;
+}
+
+hr {
     height: 5px;
-    background-image: -webkit-linear-gradient(left,black,white,white,black);
+    background-image: -webkit-linear-gradient(left, black, white, white, black);
 }
 
-.myservicesText{
+.myservicesText {
     text-align: center;
 }
-.myservicesText span{
-    color:rgb(211,23,111) !important
-}
-.serviceIcon span{
-    color:rgb(211,23,111) !important
-}
-.serviceIcon{
-    color:rgb(211,23,111) !important
+
+.myservicesText span {
+    color: rgb(211, 23, 111) !important
 }
 
-.card{
-    height: 470px;
-    transition: 1s;
+.serviceIcon span {
+    color: rgb(211, 23, 111) !important
 }
 
-.card:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.serviceIcon {
+    color: rgb(211, 23, 111) !important
 }
 
-.card-body a{
+.card-body a {
     color: white;
-    background-color: rgb(211,21,111);
+    background-color: rgb(211, 21, 111);
 }
-.card-body a:hover{
+
+.card-body a:hover {
     background-color: transparent;
-    border:1px solid rgb(211,23,111);
+    border: 1px solid rgb(211, 23, 111);
 }
-
-
-
-
-@media only screen and (max-width:1000px) {
-    .services{
-      height: 188vh;
-    }
-  }
