@@ -10,7 +10,7 @@ const LoginRegister = () => {
     const [msg, setMsg] = useState()
     const [msg_type, setMsg_type] = useState()
     const navigate = useNavigate()
-    const login = true
+    const login = false
     const [chk, setChk] = useState(false)
     useEffect(() => {
         axios.get('https://portfolio.basic2ai.info/api/protectedRoute')
