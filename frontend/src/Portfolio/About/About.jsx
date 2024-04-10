@@ -46,7 +46,7 @@ const About = () => {
                                         </tr>
                                         <tr>
                                             <td className='pe-5'>Work Address</td>
-                                            <td>: Khanpur Extension, New Delhi</td>
+                                            <td>: Amrit Vihar, Burari, Delhi</td>
                                         </tr>
                                         <tr>
                                             <td className='pe-5'>Phone  Number</td>
