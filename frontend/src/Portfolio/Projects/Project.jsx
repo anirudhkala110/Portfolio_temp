@@ -7,6 +7,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+axios.defaults.withCredentials = true
 
 const Project = () => {
     useEffect(() => {
@@ -21,6 +22,7 @@ const Project = () => {
         axios.defaults.withCredentials = true
         axios.get('https://portfolio.basic2ai.info/api/getAllUpdates')
             .then(res => {
+                // console.log(res)
                 setData(res.data.updates)
             })
             .catch(err => {
@@ -32,9 +34,9 @@ const Project = () => {
     })
     const [login, setLogin] = useState(false)
     useEffect(() => {
-        axios.defaults.withCredentials = true
         axios.get('https://portfolio.basic2ai.info/api/protectedRoute')
             .then(res => {
+                // console.log(res)
                 setLogin(res.data.login)
             })
             .catch(err => console.log(err))
@@ -55,7 +57,7 @@ const Project = () => {
                 .then(res => {
                     setMsg(res.data.msg)
                     setMsg_type(res.data.msg_type)
-                   setInterval(() => {
+                    setInterval(() => {
                         setMsg(null)
                     }, 2000)
                 })
@@ -73,7 +75,7 @@ const Project = () => {
                     login && <div className='w-100 d-flex justify-content-end px-4'><button className='btn btn-success' onClick={e => handleRoute('add')}>Add Project</button></div>
                 }
                 {
-                    msg && <center className={`w-100 px-5  ${msg_type==="good"?'text-success':''}`}><div className='p-2 text-dark bg-white rounded'>{msg}</div></center>
+                    msg && <center className={`w-100 px-5  ${msg_type === "good" ? 'text-success' : ''}`}><div className='p-2 text-dark bg-white rounded'>{msg}</div></center>
                 }
                 <div className={`container text-center ${!login && 'mt-5'}`}>
                     <div className="row">
@@ -89,7 +91,7 @@ const Project = () => {
                                             >{data.head}...
                                             </div>
                                             <button href='' className='btn btn-outline-dark m-1' onClick={e => handleRead(data.title)}>More Information</button>
-                                            { login && <button href='' className='btn btn-outline-danger m-1' onClick={e => handleDelete(data.id)}>Delete</button> }
+                                            {login && <button href='' className='btn btn-outline-danger m-1' onClick={e => handleDelete(data.id)}>Delete</button>}
                                         </div>
                                     </div>
                                 </div>

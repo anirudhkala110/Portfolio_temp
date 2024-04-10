@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+axios.defaults.withCredentials = true
 const Details = () => {
     const { name } = useParams();
     const [data, setData] = useState(null);

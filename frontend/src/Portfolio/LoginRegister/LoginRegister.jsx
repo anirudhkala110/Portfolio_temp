@@ -13,7 +13,6 @@ const LoginRegister = () => {
     const login = true
     const [chk, setChk] = useState(false)
     useEffect(() => {
-        axios.defaults.withCredentials = true
         axios.get('https://portfolio.basic2ai.info/api/protectedRoute')
             .then(res => {
                 setChk(res.data.login)

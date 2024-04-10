@@ -7,10 +7,10 @@ import './Nav.css'
 import Home from '../../Home/Home'
 import axios from 'axios'
 
+axios.defaults.withCredentials = true
 const Nav = () => {
     const [login, setLogin] = useState(false)
     useEffect(() => {
-        axios.defaults.withCredentials = true
         axios.get('https://portfolio.basic2ai.info/api/protectedRoute')
             .then(res => {
                 setLogin(res.data.login)

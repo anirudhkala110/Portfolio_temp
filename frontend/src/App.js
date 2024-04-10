@@ -17,10 +17,10 @@ import Addproject from './Portfolio/Projects/Addproject';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Details from './Portfolio/Projects/Details';
+axios.defaults.withCredentials = true
 function App() {
   const [login, setLogin] = useState(false)
   useEffect(() => {
-    axios.defaults.withCredentials = true
     axios.get('https://portfolio.basic2ai.info/api/protectedRoute')
       .then(res => {
         setLogin(res.data.login)

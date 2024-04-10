@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+axios.defaults.withCredentials = true
 const Addproject = () => {
     const [title, setTitle] = useState()
     const [heading, setHead] = useState()
