@@ -26,7 +26,7 @@ const About = () => {
                             {/* <div className="col-12 col-md-6 col-lg-6 aboutTextPart" data-aos="fade-left"> */}
                             <div>
                                 <h3>Hello ,  I am Anirudh Kala</h3>
-                                <p>Anirudh Kala is a highly skilled and versatile developer known for his expertise in web development, software development, and backend development.
+                                <p>Anirudh Kala is a highly skilled and versatile developer known for his expertise in full stack web development and software development.
                                     With a passion for creating innovative and efficient solutions,
                                     Anirudh  has established himself as a go-to professional in the tech industry.
                                 </p>
