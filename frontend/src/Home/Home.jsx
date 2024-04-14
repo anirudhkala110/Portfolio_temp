@@ -27,8 +27,8 @@ const Home = () => {
                                     />
                                 </h1>
                                 <p>
-                                    I am a Anirudh. Graduate from GBPUAT [ Govind Ballabh Pant University of Agriculture and Technology, Bachelor of Technology ( IT )]<br/>
-                                    I am Expert in Data Structure and Algoritms, Frontend Developement and also backend Developement..
+                                    I am a Anirudh. Graduate from GBPUAT [ Govind Ballabh Pant University of Agriculture and Technology, Pantnagar, Bachelor of Technology ( IT )]<br/>
+                                    I have Expertise in Data Structure and Algoritms, Frontend Developement, backend Developement, python development and programming.
                                 </p>
                                 <div className='icons my-3'>
                                     <a href='https://www.facebook.com/login/'><img src={fb} className='bg-light p-1 rounded rounded-5 mx-1' /></a>
